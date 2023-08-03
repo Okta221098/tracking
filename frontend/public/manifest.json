@@ -1,0 +1,26 @@
+{
+  "short_name": "E- Sales",
+  "name": "E-Position Tracking Sales",
+  "icons": [
+    {
+      "src": "icon144.png",
+      "sizes": "144x144 64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "icons.png",
+      "type": "image/png",
+      "sizes": "131x166"
+    },
+    {
+      "src": "iconsBig.png",
+      "type": "image/png",
+      "sizes": "337x449"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#FFFFFF",
+  "background_color": "#ffffff"
+}

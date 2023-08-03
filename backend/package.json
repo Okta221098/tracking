@@ -1,0 +1,46 @@
+{
+  "name": "backend-sales-tracking",
+  "version": "1.0.0",
+  "description": "sales tracking apotik",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "stop": "pm2-runtime stop ecosystem.config.js --env production",
+    "start:dev": "nodemon src/app.js",
+    "db:reset": "./node_modules/.bin/sequelize db:drop && ./node_modules/.bin/sequelize db:create && ./node_modules/.bin/sequelize db:migrate && ./node_modules/.bin/sequelize db:seed:all",
+    "db:start": "./node_modules/.bin/sequelize db:create && ./node_modules/.bin/sequelize db:migrate",
+    "db:reset:pro": "./node_modules/.bin/sequelize db:create && ./node_modules/.bin/sequelize db:migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:Okta221098/tracking.git"
+  },
+  "keywords": [
+    "sales",
+    "tracking",
+    "apotik"
+  ],
+  "author": "Muhammad Okta Suciarto",
+  "license": "ISC",
+  "homepage": "https://github.com/Okta221098/tracking",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.0",
+    "fs-extra": "^9.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.19",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "pm2": "^4.4.0",
+    "sequelize": "^5.21.11",
+    "sequelize-cli": "^5.5.1"
+  }
+}
